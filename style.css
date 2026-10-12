@@ -328,9 +328,9 @@ body {
     word-break: break-word;
 }
 
-.hero-title-prefix {
+.hero-title-sub {
     display: block;
-    font-size: clamp(2.2rem, 4.4vw, 4rem);
+    font-size: clamp(0.2rem, 4.4vw, 4rem);
     color: var(--sand-text);
     letter-spacing: -1px;
 }
@@ -342,9 +342,9 @@ body {
     letter-spacing: -2px;
 }
 
-.hero-title-sub {
+.hero-title-prefix {
     display: block;
-    font-size: clamp(2.4rem, 5vw, 4.8rem);
+    font-size: clamp(2.2rem, 4.4vw, 4rem);
     background: linear-gradient(135deg, var(--orange) 0%, #ff8c42 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
