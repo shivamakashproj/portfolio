@@ -55,14 +55,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 5. Certificate Modal
-    const modal   = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
-    const closeBtn = document.querySelector(".modal-close");
+    const modal      = document.getElementById("imageModal");
+    const modalImg   = document.getElementById("modalImg");
+    const closeBtn   = document.querySelector(".modal-close");
+    const modalCapt  = document.getElementById("modalCaption");
 
     document.querySelectorAll(".view-cert-btn").forEach(btn => {
         btn.addEventListener("click", function() {
             modal.style.display = "block";
             modalImg.src = this.getAttribute("data-cert");
+            if (modalCapt) {
+                modalCapt.textContent = this.getAttribute("data-title") || "Certificate of Completion";
+            }
         });
     });
 
