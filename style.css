@@ -709,11 +709,11 @@ body {
     object-fit: cover;
     object-position: top center;
     display: block;
-    filter: grayscale(100%) contrast(1.18) brightness(0.96);
+    filter: contrast(1.05) brightness(1.02);
     transition: var(--transition);
 }
 .photo-card:hover .photo-main-img {
-    filter: grayscale(100%) contrast(1.22) brightness(1.02);
+    filter: contrast(1.08) brightness(1.05);
     transform: scale(1.04);
 }
 
